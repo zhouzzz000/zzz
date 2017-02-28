@@ -1,0 +1,34 @@
+<!--注释文字-->:代码注释
+<body></body>:网页上显示的内容标签
+<p></p>:段落标签
+<h1></h1>~<h6></h6>：标题标签
+<em></em>：强调标签（斜体表示）
+<strong></strong> :更强烈的强调
+<span></span>：设置单独的样式的标签
+<q></q>：短文本引用标签（网页中自动加上“”）
+<blockquote></blockquote>:长文本引用标签
+<br/>:(空标签，只用写一个开始标签)分行显示文本标签
+&nbsp;：为文本添加一个空格
+<hr/>：添加水平横线标签
+<address></address>:加入地址信息标签
+<code></code>:加入一行代码标签
+<pre></pre>:加入大段代码标签
+<ul><li></li><ul>:信息排列
+<ol><li></li></ol>:信息排列（自动加入序列号）
+<div></div>:划分独立版块
+<div  id="版块名称">…</div>	
+<table summary="表格简介文本">
+<caption>标题文本</caption>：为表格添加标题
+<a href="http://www.imooc.com" title="点击进入慕课网">click here!</a>:实行超链接
+eg:<a href="http://www.imooc.com" title="点击进入慕课网">click here!</a>
+<a href="目标网址" target="_blank">click here!</a>(在新窗口打开链接网页)
+<a href="mailto:yy@imooc.com ? cc=xiaoming@imooc & bcc=xiaoyu@imooc.com & subject=主题 & body=邮件内容">发送</a>
+{
+	mailto:浏览器自动调用默认客户端电子邮件程序，并在收件人框中自动填写上收件人地址
+	cc=：可以填写抄送地址
+	bcc=：可以填写密件抄送地址
+	；：用分号隔开多个收件人的地址，可以实现发送给多个收件人功能
+	subject=：添加邮件主题
+	body=：添加邮件内容
+	如果mailto后面同时有多个参数的话，第一个参数必须以“？”开头，后面的参数每一个都以“&”分隔
+}
