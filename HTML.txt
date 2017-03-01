@@ -32,3 +32,5 @@ eg:<a href="http://www.imooc.com" title="点击进入慕课网">click here!</a>
 	body=：添加邮件内容
 	如果mailto后面同时有多个参数的话，第一个参数必须以“？”开头，后面的参数每一个都以“&”分隔
 }
+<img src="图片地址" alt="下载失败时的替换文本" title = "提示文本">：添加图片
+eg：<img src = "myimage.gif" alt = "My Image" title = "My Image" />
