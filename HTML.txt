@@ -18,6 +18,12 @@
 <div></div>:划分独立版块
 <div  id="版块名称">…</div>	
 <table summary="表格简介文本">
+{
+	<tbody></tbody>:表格内容非常多时，使表格内容加载完在显示
+	<th><th>:表格的表头单元格
+	<tr></tr>表格中的每一行
+	<td></td>表格中的每一列
+}
 <caption>标题文本</caption>：为表格添加标题
 <a href="http://www.imooc.com" title="点击进入慕课网">click here!</a>:实行超链接
 eg:<a href="http://www.imooc.com" title="点击进入慕课网">click here!</a>
