@@ -34,3 +34,15 @@ eg:<a href="http://www.imooc.com" title="点击进入慕课网">click here!</a>
 }
 <img src="图片地址" alt="下载失败时的替换文本" title = "提示文本">：添加图片
 eg：<img src = "myimage.gif" alt = "My Image" title = "My Image" />
+<form   method="传送方式（post/get）"   action="服务器文件">：将浏览者输入的数据传输到服务器端
+<form>
+   <input type="text/password" name="名称" value="文本" />
+</form>(type=“text”时，输入框为文本输入框；type“password”时，输入框为密码输入框；name：为文本框命名；value：为文本输入框设默认值)
+eg:<form>
+	name
+	<input type="text" name="myname">
+	<br/>
+	password
+	<input type="password" name="pass">
+    </form>
+<textarea rows="行数" cols="列数">文本</textarea>:文本输入域（用于在表单中输入大段文字时）
