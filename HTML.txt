@@ -46,9 +46,31 @@ eg：<img src = "myimage.gif" alt = "My Image" title = "My Image" />
 </form>(type=“text”时，输入框为文本输入框；type“password”时，输入框为密码输入框；name：为文本框命名；value：为文本输入框设默认值)
 eg:<form>
 	name
-	<input type="text" name="myname">
+	<input type="text" name="myname"/>
 	<br/>
 	password
-	<input type="password" name="pass">
+	<input type="password" name="pass"/>
     </form>
 <textarea rows="行数" cols="列数">文本</textarea>:文本输入域（用于在表单中输入大段文字时）
+<input   type="radio/checkbox"   value="值"    name="名称"   checked="checked"/>
+{
+	type=“radio”时，控件为单选框
+	type=“checkbox”时，控件为复选框
+	value：“提交数据到服务器的值”
+	name：为控件命名
+	checked=checked：当设置checked=checked时，该选项默认选中
+注：同一组的单选按钮，name取值一定要一致，才能取到单选的作用		
+}
+<form name="iform">
+	<label>爱好:</label>
+	<select |multiple="multiple"|>(multiple=“multiple”时，下拉表框可以多选)
+		<option value="study">study</option>
+		<option value="sport">sport</option>
+		<option value="shop" selected="selected">shop</option>(当selected="selected"时，该选项默认被选中)
+	</select>
+</form>
+<input type="submit" value="提交"/>（设置提交按钮，type的值为submit时，按钮才有作用，value：按钮上显示的字）
+<input type="reset" value="重置"/>(设置重置按钮)
+<label for="对应控件id名称"></label>（为鼠标用户改进了可用性，在label标签内点击文本，就会触发此控件）(for属性的值一定要和相关控件中的id属性值相同)
+eg:<label for="male">男</label>
+	<input type="radio" name="gender" id="male"/>
