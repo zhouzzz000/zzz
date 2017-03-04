@@ -74,3 +74,4 @@ eg:<form>
 <label for="对应控件id名称"></label>（为鼠标用户改进了可用性，在label标签内点击文本，就会触发此控件）(for属性的值一定要和相关控件中的id属性值相同)
 eg:<label for="male">男</label>
 	<input type="radio" name="gender" id="male"/>
+HTML学习结束，下面是css
