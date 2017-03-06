@@ -88,3 +88,19 @@ css样式代码插入形式：内嵌式、嵌入式、外部式
 	三个样式的优先级：内嵌式>嵌入式>外部式（三种方法设计同一行字，显示内嵌式代码的样式）
 
 }
+标签选择器：标签{css样式代码}
+类选择器：.类选择器名称{css样式代码；}
+eg：.stress{color:red;}<span class="stress">更改字体样式</span>
+ID选择器：#ID选择器名称{css样式代码}
+eg：#stress{color:red;}<span id="stress">更改字体样式</span>
+ID选择器和类选择器的区别：相同点：可以应用于任何元素
+			不同点：在一个html文档中；ID选择器只能使用一次，而且仅一次，而类选择器可以使用多次
+eg：
+.stress{
+    color:red;
+}
+.bigsize{
+    font-size:25px;
+}
+<p>到了<span class="stress bigsize">三年级</span>下学期时，我们班上了一节公开课...</p>（这是正确且可以使‘三年级’变成25号红色，而id选择器则不行）
+子选择器：.food>span{border:1px solid red;}(这行代码会使class名为food的子元素span加入红色实线边框）
