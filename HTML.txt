@@ -112,3 +112,36 @@ a：hover{color:red;}（为a标签鼠标滑过的的状态设置字体颜色变红，这样就会使a标签包
 分组选择符：可以为html中多个标签元素设置统一样式
 eg：h1,soan{color:red;}==h1{color:red;}+span{color:red}
     .first,#second>span{color:red}==.first{color:red}+#second>span{color:red}
+权值：有的时候我们为同一个元素设置了不同的CSS样式代码，那么元素会启用哪一个CSS样式呢?我们来看一下面的代码：
+
+p{color:red;}
+.first{color:green;}
+<p class="first">三年级时，我还是一个<span>胆小如鼠</span>的小女孩。</p>
+p和.first都匹配到了p这个标签上，那么会显示哪种颜色呢？green是正确的颜色，那么为什么呢？是因为浏览器是根据权值来判断使用哪种css样式的，权值高的就使用哪种css样式。
+  *标签的权值为1，类选择符的权值为10，id选择符的权值最高为100
+	eg：{
+p{color:red;} /*权值为1*/
+p span{color:green;} /*权值为1+1=2*/
+
+.warning{color:white;} /*权值为10*/
+p span.warning{color:purple;} /*权值为1+1+10=12*/
+#footer .note p{color:yellow;} /*权值为100+10+1=111*/
+		注意：继承的也有0.1的权值，可以理解为继承的权值最低}
+叠层：
+层叠就是在html文件中对于同一个元素可以有多个css样式存在，当有相同权重的样式存在时，会根据这些css样式的前后顺序来决定，处于最后面的css样式会被应用。
+!important:为样式设置最高权值
+{
+	p{color:red!important;}
+p{color:green;}
+<p class="first">三年级时，我还是一个<span>胆小如鼠</span>的小女孩。</p>
+	这是p段落中文本会显示的red颜色
+	*！important要写在分号前面
+}
+字体：
+用css样式为网页中的文字设置字体，字号，颜色等样式属性
+eg：*body{font-family:"Microsoft Yahei";}为文字设置微软雅黑的字体（不要设置不常用的字体）
+    *body{font-size:12px;color:#666；}设置12像素#666（灰色）字体
+    *body{font-weight：bold；}设置粗体字
+    *body{font-style：italic；}设置斜体字
+    *body{text-decoration：underline}：设置下划线
+    *body{text-decoration:line-through}:设置删除线（比如电商网站中的价格变化）
