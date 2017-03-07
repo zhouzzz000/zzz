@@ -103,4 +103,12 @@ eg：
     font-size:25px;
 }
 <p>到了<span class="stress bigsize">三年级</span>下学期时，我们班上了一节公开课...</p>（这是正确且可以使‘三年级’变成25号红色，而id选择器则不行）
-子选择器：.food>span{border:1px solid red;}(这行代码会使class名为food的子元素span加入红色实线边框）
+子选择器：.food>span{border:1px solid red;}(这行代码会使class名为food的子元素加入红色实线边框）仅指第一代后代
+包括（后代）选择器：.food span{color:red;}子选择器仅它的直接后代，也就是作用于子元素的第一代后代：而后代选择器是作用于所有子后代元素，后代选择器是通过空格来选择的，而子选择器是通过“>”进行选择
+通用选择器：功能最强大的选择器，用一个*指定，它的作用是匹配HTML中所有标签元素
+eg:*{color:red}（将所有字体设为红色）
+伪类选择符：它允许给html中不存在的标签（标签的某种状态）设置样式：
+a：hover{color:red;}（为a标签鼠标滑过的的状态设置字体颜色变红，这样就会使a标签包围的字体加入鼠标划过字体颜色变红的特效）
+分组选择符：可以为html中多个标签元素设置统一样式
+eg：h1,soan{color:red;}==h1{color:red;}+span{color:red}
+    .first,#second>span{color:red}==.first{color:red}+#second>span{color:red}
