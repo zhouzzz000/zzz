@@ -174,3 +174,19 @@ eg£º*body{font-family:"Microsoft Yahei";}ÎªÎÄ×ÖÉèÖÃÎ¢ÈíÑÅºÚµÄ×ÖÌå£¨²»ÒªÉèÖÃ²»³£Ó
 
 	 3¡¢ÔªËØµÄ¿í¶È¾ÍÊÇËü°üº¬µÄÎÄ×Ö»òÍ¼Æ¬µÄ¿í¶È£¬²»¿É¸Ä±ä¡£
 	 *£ºdiv{display:inline;}½«¿é×´ÔªËØ×ª»»³ÉÄÚÁªÔªËØ
+ÄÚÁª¿é×´ÔªËØ£¨Í¬Ê±¾ß±¸¿é×´ÔªËØ¡¢ÄÚÁªÔªËØµÄÌØµã£©£º
+	1¡¢ºÍÆäËûÔªËØ¶¼ÔÚÒ»ĞĞÉÏ£»
+	
+	2¡¢ÔªËØµÄ¸ß¶È¡¢¿í¶È¡¢ĞĞ¸ßÒÔ¼°¶¥ºÍµ×±ß¾à¶¼¿ÉÉèÖÃ¡£
+	*{display:inline-block}:½«ÔªËØÉèÎªÄÚÁªÔªËØ
+ºĞ×ÓÄ£ĞÍ-±ß¿ò£º
+	div{border:2px solid red;}=div{border-style:solid;
+				       border-width:2px
+				       border-color:red;}
+	*border-style³£¼ûÑùÊ½£ºdashed£¨ĞéÏß£©|dotted£¨µãÏß£©|solid£¨ÊµÏß£©
+	*border-color£º¿ÉÉèÖÃÎªÊ®Áù½øÖÆÑÕÉ«|border-color£º#888|£¨#ºÅ²»ÒªÍü¼Ç£©
+	*border-width¿ÉÉèÖÃÎª£ºthin£¨Ï¸£©|medium£¨ÖĞ£©|thick£¨Å¨£©|×îºÃ»¹ÊÇÓÃÏñËØ
+µ¥¶ÀÉèÖÃ£ºp{border-bottom:1px solid red;}£¨ÏÂ±ß¿ò£©
+	 p{border-top:1px solid red;}(ÉÏ±ß¿ò)
+	 p{border-left:1px solid red;}(×ó±ß¿ò)
+	 p{border-right:1px solid red;}(ÓÒ±ß¿ò£©
