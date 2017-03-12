@@ -39,6 +39,14 @@ eg:<a href="http://www.imooc.com" title="µã»÷½øÈëÄ½¿ÎÍø">click here!</a>
 	Èç¹ûmailtoºóÃæÍ¬Ê±ÓĞ¶à¸ö²ÎÊıµÄ»°£¬µÚÒ»¸ö²ÎÊı±ØĞëÒÔ¡°£¿¡±¿ªÍ·£¬ºóÃæµÄ²ÎÊıÃ¿Ò»¸ö¶¼ÒÔ¡°&¡±·Ö¸ô
 }
 <img src="Í¼Æ¬µØÖ·" alt="ÏÂÔØÊ§°ÜÊ±µÄÌæ»»ÎÄ±¾" title = "ÌáÊ¾ÎÄ±¾">£ºÌí¼ÓÍ¼Æ¬
+<embed src="²åÈëÎÄ¼şµØÖ·">¿ÉÒÔ²åÈë¶àÃ½Ìå£¬ppt£¬ÒôÆµµÈ£»
+{
+	embedÊôĞÔÉèÖÃ£ºautostart=ture/false£º×Ô¶¯²¥·Å»òÕß²»×Ô¶¯²¥·Å
+		      loop=ÊıÖµ/ture/false£ºÉèÖÃÑ­»·²¥·Å´ÎÊı»òÕßÒ»Ö±Ñ­»·²¥·Å»òÕß²»Ñ­»·²¥·Å
+		      hidden=ture/no£º¹æ¶¨¿ØÖÆÃæ°åÊÇ·ñÏÔÊ¾£¨Ä¬ÈÏÖµÎªno£©
+		      starttime=mm£ºss£¨·Ö£ºÃë£©£ºÉèÖÃ²¥·Å¿ªÊ¼Ê±¼ä£¬Î´ÉèÖÃÔò´ÓÍ·¿ªÊ¼²¥·Å
+		      volume=0-100£¨ÕûÊı£©£ºÉèÖÃÒôÁ¿´óĞ¡£¬Î´ÉèÖÃÔòÓÉÏµÍ³±¾Éí¹æ¶¨
+}
 eg£º<img src = "myimage.gif" alt = "My Image" title = "My Image" />
 <form   method="´«ËÍ·½Ê½£¨post/get£©"   action="·şÎñÆ÷ÎÄ¼ş">£º½«ä¯ÀÀÕßÊäÈëµÄÊı¾İ´«Êäµ½·şÎñÆ÷¶Ë
 <form>
@@ -190,3 +198,10 @@ eg£º*body{font-family:"Microsoft Yahei";}ÎªÎÄ×ÖÉèÖÃÎ¢ÈíÑÅºÚµÄ×ÖÌå£¨²»ÒªÉèÖÃ²»³£Ó
 	 p{border-top:1px solid red;}(ÉÏ±ß¿ò)
 	 p{border-left:1px solid red;}(×ó±ß¿ò)
 	 p{border-right:1px solid red;}(ÓÒ±ß¿ò£©
+div{
+    		width:200px;/*ÄÚÈİ¿í¶È*/
+     		padding:20px;/*Ìî³ä¿í¶È*/
+    		border:1px solid red;/*±ß¿òÉèÖÃ*/
+    		margin:10px;/*±ß½ç¿í¶È*/
+}/*ÔªËØÊµ¼Ê³¤¶È=10px+1px+20px+200px+20px+1px+10px=262px*/
+css²¼¾ÖÄ£ĞÍ£ºflow£¨Á÷¶¯Ä£ĞÍ£©¡¢float£¨¸¡¶¯Ä£ĞÍ£©¡¢²ãÄ£ĞÍ£¨layer£©
