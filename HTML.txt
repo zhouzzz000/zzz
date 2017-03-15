@@ -205,3 +205,11 @@ div{
     		margin:10px;/*边界宽度*/
 }/*元素实际长度=10px+1px+20px+200px+20px+1px+10px=262px*/
 css布局模型：flow（流动模型）、float（浮动模型）、层模型（layer）
+flow：块状元素独自占据一行，行内元素可以并排
+float：可以使块状元素并排
+layer：{
+	*position：absolute（绝对定位）：相对于其他定位元素定位
+	*position：relative（相对定位）：相对于自己原先的位置定位
+	*position：fixed（固定定位）：相对于页面窗口定位
+}
+
