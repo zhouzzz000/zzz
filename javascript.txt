@@ -1,0 +1,18 @@
+js直接写在HTML文档中：js代码插入在<script></script>之间
+eg:
+	<script type="text/javascript">
+	    ----js代码----
+	</script>
+js写在单独的文档中供并在HTML文件中执行：
+*js代码文档以.js结尾，直接写在文档中，不需要<script>标签
+*html中引用js代码：<script src="javascript.js"></script>
+js代码放在<head></head>或者<body></body>之间
+注释："//....."单行注释
+      "/*.....*/"多行注释
+变量：
+*var 变量名（变量要先声明在赋值）
+{
+	变量命名规则：*必须以字母、下划线或者$符号开始
+		     *可以使用任意多个英文字母、数字、下划线或者$组成
+		     *不能使用Javascript等关键词与javascript保留字
+}
