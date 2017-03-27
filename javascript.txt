@@ -14,5 +14,59 @@ js代码放在<head></head>或者<body></body>之间
 {
 	变量命名规则：*必须以字母、下划线或者$符号开始
 		     *可以使用任意多个英文字母、数字、下划线或者$组成
-		     *不能使用Javascript等关键词与javascript保留字
+		     *不能使用Javascript等关键词与javascript
 }
+函数：
+*function 函数名（）
+{
+	函数代码；
+}
+输出内容（document.write）
+一：document.write（“。。。”）；直接输出括号里的内容
+二：var mystr="hello world!"；
+	document.write(mystr);通过变量，输出内容
+三：var mystr="hello world!";
+         document.write(mystr+"javascript");输出多项内容，内容之间用+号连接：
+四：var mystr="hello";
+	document.write(mystr+"</br>");//输出hello后，输出一个换行符
+五：空格：document.write("&nbsp;&nbsp;"+"1"+"&nbsp;&nbsp;&nbsp;&nbsp;"+"23");
+	 document.write("<span style='white-space:pre;'>"+"  1        2    3    "+"</span>");
+	(在输出时添加“white-space:pre;”样式属性，这个样式表示“空白倍浏览器保留”)
+*alert（）;:弹出警示框，含一个确定按钮
+eg:<head><script type="text/javascript">
+  
+	function rec(){
+    
+	var mychar="I love JavaScript";
+    
+	alert(mychar);
+
+  
+	}
+  </script></head>
+<body><input name="button" type="button" onClick="rec()" value="点击我，弹出对话框" /></body>
+*confirm();:消息对话框，如：“你对吗？”等。弹出对话框(包括一个确定按钮和一个取消按钮)。
+eg:<script type="text/javascript">
+	var mymessage=confirm("你喜欢javascript？")//点击确定返回值true，点击取消返回false。
+	if（mymessage==true）
+	{document.write("very good!");}
+	else
+	{document.write("not good!");}
+</script>
+*prompt(str1,str2);:弹出消息对话框,通常用于询问一些需要与用户交互的信息。弹出消息对话框（包含一个确定按钮、取消按钮与一个文本输入框）(str1：显示在消息对话框中的文本，不可改变；str2：文本输入框中的内容，可以改变)
+eg：var myname = prompt("请输入你的姓名：");(点击确定按钮：文本框中的内容将作为返回值；点击取消按钮，将返回null)
+	if(myname!=null)
+	{document.write("Hi"+myname);}
+	else
+	{document.write("Hi my friend.");}
+*window.open([url],[窗口名称]，[参数字符串])
+eg.<script type="text/javascript">
+	window.open('http://www.imooc.com',
+	'_blank',(_blank:在新窗口显示目标网页;_self:在当前窗口显示目标网页；_top:框架网页中在上部窗口中显示目标网页)ps:name不能含有空格；相同name的窗口只能创建一个，要想要创建多个窗口则name不能相同。
+	'width=300,height=200,（新打开的窗口的宽高）
+	menubar=no,（新打开窗口有没有菜单栏）
+	toolbar=no, （新打开窗口有没有工具栏）
+	status=no,（新打开窗口有没有状态栏）
+	scrollbars=yes’（新打开窗口有没有滚动条）
+	)
+   </script>
