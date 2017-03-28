@@ -70,3 +70,9 @@ eg.<script type="text/javascript">
 	scrollbars=yes’（新打开窗口有没有滚动条）
 	)
    </script>
+   *<窗口对象>.close();//关闭指定窗口；
+   eg：window.close();//关闭当前窗口；
+   eg：<script type="text/javascript">
+		var mywin=window.open('http://www.imooc.com'); //将新打的窗口对象，存储在变量mywin中
+		mywin.close();
+		</script>（将看不到窗口的打开，因为打开窗口的同时关闭窗口）
