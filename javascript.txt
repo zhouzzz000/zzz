@@ -111,3 +111,12 @@ eg：<h2 id="con">javascript</h2>
 		document.write("修改后的标题:"+mychar.innerHTML); //输出修改后h2标签内容
 
 	</script>
+*Object(通过document.getElementById()获取的元素对象).style.property(属性)=new style（更改的属性）
+：通过javascript更改html元素的样式
+*Object.style.display="value";
+{
+	value=none:此元素内容不会被显示（即隐藏）
+	value=block:此元素显示为块级元素（即显示）
+}
+*Object.className="classname（属性名称）":1：获取元素的class属性；2：为网页内的某个元素指定一个css样式来更改该元素的外观
+*Object.removeAttribute("style"):重置该元素对象的style设置。
